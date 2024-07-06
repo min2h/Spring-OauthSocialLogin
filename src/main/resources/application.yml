@@ -13,3 +13,22 @@ spring:
 
 server:
   port: 8081
+
+  oauth:
+    kakao:
+      client_id:  # REST API ?
+      redirect_uri:  # redirect_url
+      client_secret:  # Client Secret ?
+      scope: profile_nickname, profile_image, account_email
+    naver:
+      client_id: #
+      redirect_uri: #
+      client_secret: #
+      scope: profile_nickname, profile_image, email, birthday
+    google:
+      client-id: #
+      client-secret: #
+      redirect-uri: http://localhost:3000/oauth/redirected/google # http://localhost:8080/login/oauth2/code/google
+      token-uri: https://oauth2.googleapis.com/token
+      resource-uri: https://www.googleapis.com/oauth2/v2/userinfo
+      scope: profile email

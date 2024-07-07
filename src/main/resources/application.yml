@@ -1,34 +1,21 @@
 spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/mydatabase?serverTimezone=UTC
-    username: root
-    password: password
-    driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: demo
+  profiles:
+    # 기본적으로 활성화 될 프로파일
+    active: API-KEY,dev
+    # prod로 실행 시 활성화 될 프로파일
+    group:
+      prod: API-KEY
 
+  # JPA
   jpa:
-    database-platform: org.hibernate.dialect.MySQL8Dialect
-    show-sql: true
-    hibernate:
-      ddl-auto: update
+    database: mysql
+    properties:
+      hibernate:
+        format_sql: 'true'
+
+
 
 server:
-  port: 8081
-
-  oauth:
-    kakao:
-      client_id:  # REST API ?
-      redirect_uri:  # redirect_url
-      client_secret:  # Client Secret ?
-      scope: profile_nickname, profile_image, account_email
-    naver:
-      client_id: #
-      redirect_uri: #
-      client_secret: #
-      scope: profile_nickname, profile_image, email, birthday
-    google:
-      client-id: #
-      client-secret: #
-      redirect-uri: http://localhost:3000/oauth/redirected/google # http://localhost:8080/login/oauth2/code/google
-      token-uri: https://oauth2.googleapis.com/token
-      resource-uri: https://www.googleapis.com/oauth2/v2/userinfo
-      scope: profile email
+  port: 8080

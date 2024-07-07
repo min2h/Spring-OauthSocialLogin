@@ -1,0 +1,18 @@
+oauth:
+  kakao:
+    client_id: #
+    redirect_uri: #
+    client_secret: #
+    scope: profile_nickname, profile_image, account_email
+  naver:
+    client_id: #_
+    redirect_uri: #
+    client_secret: #
+    scope: profile_nickname, profile_image, email, birthday
+  google:
+    client-id: #
+    client-secret: #
+    redirect-uri: #
+    token-uri: #
+    resource-uri: #
+    scope: profile email

@@ -8,9 +8,7 @@ group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 
 java {
-	toolchain {
-		languageVersion = JavaLanguageVersion.of(17)
-	}
+	sourceCompatibility = '17'
 }
 
 configurations {
@@ -31,6 +29,9 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 	runtimeOnly 'mysql:mysql-connector-java:8.0.28'
+	// oauth
+	implementation 'org.springframework.boot:spring-boot-starter-webflux'
+	implementation 'com.google.code.gson:gson'
 }
 
 tasks.named('test') {

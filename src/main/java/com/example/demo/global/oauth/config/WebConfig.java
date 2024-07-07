@@ -1,6 +1,6 @@
-package com.example.demo.domain.global.oauth.config;
+package com.example.demo.global.oauth.config;
 
-import com.example.demo.domain.global.oauth.presentation.OauthServerTypeConverter;
+import com.example.demo.global.oauth.presentation.OauthServerTypeConverter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.format.FormatterRegistry;

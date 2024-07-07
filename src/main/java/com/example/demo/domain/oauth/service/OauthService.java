@@ -1,10 +1,9 @@
 package com.example.demo.domain.oauth.service;
 
-import com.example.demo.domain.global.oauth.client.OauthMemberClientComposite;
-import com.example.demo.domain.global.oauth.oauthcode.OauthCodeRequestUrlProviderComposite;
-import com.example.demo.domain.member.entity.Member;
-import com.example.demo.domain.member.repository.MemberRepository;
-import com.example.demo.domain.oauth.dto.OauthMember;
+import com.example.demo.global.oauth.client.OauthMemberClientComposite;
+import com.example.demo.global.oauth.oauthcode.OauthCodeRequestUrlProviderComposite;
+import com.example.demo.domain.oauth.entity.OauthMember;
+import com.example.demo.domain.oauth.repository.OauthMemberRepository;
 import com.example.demo.domain.oauth.dto.OauthServerType;
 import com.example.demo.domain.oauth.dto.Role;
 import lombok.RequiredArgsConstructor;
@@ -23,14 +22,14 @@ public class OauthService {
 
     private final OauthCodeRequestUrlProviderComposite oauthCodeRequestUrlProviderComposite;
     private final OauthMemberClientComposite oauthMemberClientComposite;
-    private final MemberRepository memberRepository;
+    private final OauthMemberRepository oauthMemberRepository;
 
     public String getAuthCodeRequestUrl(OauthServerType oauthServerType) {
         return oauthCodeRequestUrlProviderComposite.provide(oauthServerType);
     }
 
     public Map<String, Long> login(OauthServerType oauthServerType, String authCode) {
-        OauthMember oauthMember;
+        com.example.demo.domain.oauth.dto.OauthMember oauthMember;
         try {
             oauthMember = oauthMemberClientComposite.fetch(oauthServerType, authCode);
         } catch (Exception e) {
@@ -38,10 +37,10 @@ public class OauthService {
             throw new RuntimeException();
         }
 
-        Member member = memberRepository.findByEmail(oauthMember.getEmail())
+        OauthMember member = oauthMemberRepository.findByEmail(oauthMember.getEmail())
                 .orElseGet(
-                        () -> memberRepository.save(
-                                Member.builder()
+                        () -> oauthMemberRepository.save(
+                                OauthMember.builder()
                                         .oauthServerId(oauthMember.getOauthId().getOauthServerId())
                                         .oauthServerType(oauthMember.getOauthId().getOauthServerType())
                                         .email(oauthMember.getEmail())

@@ -32,7 +32,7 @@ public class KakaoMemberClient implements OauthMemberClient {
     /**
      (1) - 먼저 Auth Code를 통해서 AccessToken을 조회
      (2) - AccessToken을 가지고 회원 정보를 받아옴
-     (3) - 회원 정보를 OauthMember 객체로 변환
+     (3) - 회원 정보를 Member 객체로 변환
      */
     @Override
     public OauthMember fetch(String authCode) {

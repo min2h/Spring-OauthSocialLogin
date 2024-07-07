@@ -11,7 +11,6 @@ public enum OauthServerType {
 
     KAKAO,
     NAVER,
-
     GOOGLE,
     ;
 

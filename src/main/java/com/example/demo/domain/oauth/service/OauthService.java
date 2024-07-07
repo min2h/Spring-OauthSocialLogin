@@ -1,8 +1,8 @@
 package com.example.demo.domain.oauth.service;
 
+import com.example.demo.domain.oauth.entity.Member;
 import com.example.demo.global.oauth.client.OauthMemberClientComposite;
 import com.example.demo.global.oauth.oauthcode.OauthCodeRequestUrlProviderComposite;
-import com.example.demo.domain.oauth.entity.OauthMember;
 import com.example.demo.domain.oauth.repository.OauthMemberRepository;
 import com.example.demo.domain.oauth.dto.OauthServerType;
 import com.example.demo.domain.oauth.dto.Role;
@@ -37,10 +37,10 @@ public class OauthService {
             throw new RuntimeException();
         }
 
-        OauthMember member = oauthMemberRepository.findByEmail(oauthMember.getEmail())
+        Member member = oauthMemberRepository.findByEmail(oauthMember.getEmail())
                 .orElseGet(
                         () -> oauthMemberRepository.save(
-                                OauthMember.builder()
+                                Member.builder()
                                         .oauthServerId(oauthMember.getOauthId().getOauthServerId())
                                         .oauthServerType(oauthMember.getOauthId().getOauthServerType())
                                         .email(oauthMember.getEmail())

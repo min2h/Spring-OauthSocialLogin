@@ -15,7 +15,7 @@ import static jakarta.persistence.EnumType.STRING;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(
-        name = "oauth_member_table",
+        name = "member_table",
         uniqueConstraints = {
                 @UniqueConstraint(
                         name = "oauth_id_unique",
@@ -26,7 +26,7 @@ import static jakarta.persistence.EnumType.STRING;
                 )
         }
 )
-public class OauthMember extends StatusEntity {
+public class Member extends StatusEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -56,8 +56,8 @@ public class OauthMember extends StatusEntity {
     private Role role;
 
     @Builder
-    public OauthMember(String oauthServerId, OauthServerType oauthServerType, String email,
-                       String birthday, String nickname, String profileImageUrl, Role role) {
+    public Member(String oauthServerId, OauthServerType oauthServerType, String email,
+                  String birthday, String nickname, String profileImageUrl, Role role) {
         this.oauthServerId = oauthServerId;
         this.oauthServerType = oauthServerType;
         this.email = email;

@@ -1,4 +1,4 @@
-package com.example.demo.domain.member.dto.response;
+package com.example.demo.domain.oauth.dto.response;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

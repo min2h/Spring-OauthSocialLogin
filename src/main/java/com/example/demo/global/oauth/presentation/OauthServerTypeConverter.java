@@ -1,4 +1,4 @@
-package com.example.demo.domain.global.oauth.presentation;
+package com.example.demo.global.oauth.presentation;
 
 import com.example.demo.domain.oauth.dto.OauthServerType;
 import org.springframework.core.convert.converter.Converter;

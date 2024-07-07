@@ -1,4 +1,4 @@
-package com.example.demo.domain.global.oauth.client;
+package com.example.demo.global.oauth.client;
 
 import com.example.demo.domain.oauth.dto.OauthMember;
 import com.example.demo.domain.oauth.dto.OauthServerType;

@@ -1,4 +1,4 @@
-package com.example.demo.domain.global.oauth.kakao.dto;
+package com.example.demo.global.oauth.kakao.dto;
 
 import com.example.demo.domain.oauth.dto.OauthId;
 import com.example.demo.domain.oauth.dto.OauthMember;

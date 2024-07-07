@@ -1,7 +1,7 @@
-package com.example.demo.domain.global.oauth.kakao.client;
+package com.example.demo.global.oauth.kakao.client;
 
-import com.example.demo.domain.global.oauth.kakao.dto.KakaoMemberResponse;
-import com.example.demo.domain.global.oauth.kakao.dto.KakaoToken;
+import com.example.demo.global.oauth.kakao.dto.KakaoMemberResponse;
+import com.example.demo.global.oauth.kakao.dto.KakaoToken;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -10,6 +10,7 @@ import org.springframework.web.service.annotation.PostExchange;
 
 import static org.springframework.http.HttpHeaders.AUTHORIZATION;
 import static org.springframework.http.MediaType.APPLICATION_FORM_URLENCODED_VALUE;
+
 
 public interface KakaoApiClient {
 

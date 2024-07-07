@@ -1,9 +1,9 @@
-package com.example.demo.domain.global.oauth.kakao;
+package com.example.demo.global.oauth.kakao;
 
-import com.example.demo.domain.global.oauth.client.OauthMemberClient;
-import com.example.demo.domain.global.oauth.kakao.client.KakaoApiClient;
-import com.example.demo.domain.global.oauth.kakao.dto.KakaoMemberResponse;
-import com.example.demo.domain.global.oauth.kakao.dto.KakaoToken;
+import com.example.demo.global.oauth.client.OauthMemberClient;
+import com.example.demo.global.oauth.kakao.client.KakaoApiClient;
+import com.example.demo.global.oauth.kakao.dto.KakaoMemberResponse;
+import com.example.demo.global.oauth.kakao.dto.KakaoToken;
 import com.example.demo.domain.oauth.dto.OauthMember;
 import com.example.demo.domain.oauth.dto.OauthServerType;
 import lombok.RequiredArgsConstructor;

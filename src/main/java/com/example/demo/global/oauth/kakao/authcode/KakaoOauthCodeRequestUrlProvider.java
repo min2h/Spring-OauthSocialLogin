@@ -1,8 +1,8 @@
-package com.example.demo.domain.global.oauth.kakao.authcode;
+package com.example.demo.global.oauth.kakao.authcode;
 
 
-import com.example.demo.domain.global.oauth.kakao.KakaoOauthConfig;
-import com.example.demo.domain.global.oauth.oauthcode.OauthCodeRequestUrlProvider;
+import com.example.demo.global.oauth.kakao.KakaoOauthConfig;
+import com.example.demo.global.oauth.oauthcode.OauthCodeRequestUrlProvider;
 import com.example.demo.domain.oauth.dto.OauthServerType;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;

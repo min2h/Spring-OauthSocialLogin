@@ -1,4 +1,4 @@
-package com.example.demo.domain.global.oauth.kakao.dto;
+package com.example.demo.global.oauth.kakao.dto;
 
 import com.fasterxml.jackson.databind.PropertyNamingStrategies.SnakeCaseStrategy;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;

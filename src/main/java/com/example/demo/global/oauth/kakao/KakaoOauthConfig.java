@@ -1,4 +1,4 @@
-package com.example.demo.domain.global.oauth.kakao;
+package com.example.demo.global.oauth.kakao;
 
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;

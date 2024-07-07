@@ -1,4 +1,4 @@
-package com.example.demo.domain.global.oauth.google;
+package com.example.demo.global.oauth.google;
 
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;

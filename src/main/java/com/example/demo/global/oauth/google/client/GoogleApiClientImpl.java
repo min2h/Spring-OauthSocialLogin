@@ -1,7 +1,7 @@
-package com.example.demo.domain.global.oauth.google.client;
+package com.example.demo.global.oauth.google.client;
 
-import com.example.demo.domain.global.oauth.google.dto.GoogleMemberResponse;
-import com.example.demo.domain.global.oauth.google.dto.GoogleToken;
+import com.example.demo.global.oauth.google.dto.GoogleMemberResponse;
+import com.example.demo.global.oauth.google.dto.GoogleToken;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpEntity;

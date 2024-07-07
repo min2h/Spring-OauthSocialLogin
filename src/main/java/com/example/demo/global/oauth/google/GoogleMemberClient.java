@@ -1,9 +1,9 @@
-package com.example.demo.domain.global.oauth.google;
+package com.example.demo.global.oauth.google;
 
-import com.example.demo.domain.global.oauth.client.OauthMemberClient;
-import com.example.demo.domain.global.oauth.google.client.GoogleApiClient;
-import com.example.demo.domain.global.oauth.google.dto.GoogleMemberResponse;
-import com.example.demo.domain.global.oauth.google.dto.GoogleToken;
+import com.example.demo.global.oauth.client.OauthMemberClient;
+import com.example.demo.global.oauth.google.client.GoogleApiClient;
+import com.example.demo.global.oauth.google.dto.GoogleMemberResponse;
+import com.example.demo.global.oauth.google.dto.GoogleToken;
 import com.example.demo.domain.oauth.dto.OauthMember;
 import com.example.demo.domain.oauth.dto.OauthServerType;
 import lombok.RequiredArgsConstructor;

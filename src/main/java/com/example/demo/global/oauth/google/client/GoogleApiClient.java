@@ -1,7 +1,7 @@
-package com.example.demo.domain.global.oauth.google.client;
+package com.example.demo.global.oauth.google.client;
 
-import com.example.demo.domain.global.oauth.google.dto.GoogleMemberResponse;
-import com.example.demo.domain.global.oauth.google.dto.GoogleToken;
+import com.example.demo.global.oauth.google.dto.GoogleMemberResponse;
+import com.example.demo.global.oauth.google.dto.GoogleToken;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;

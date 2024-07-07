@@ -1,7 +1,7 @@
-package com.example.demo.domain.global.oauth.google.authcode;
+package com.example.demo.global.oauth.google.authcode;
 
-import com.example.demo.domain.global.oauth.google.GoogleOauthConfig;
-import com.example.demo.domain.global.oauth.oauthcode.OauthCodeRequestUrlProvider;
+import com.example.demo.global.oauth.google.GoogleOauthConfig;
+import com.example.demo.global.oauth.oauthcode.OauthCodeRequestUrlProvider;
 import com.example.demo.domain.oauth.dto.OauthServerType;
 import org.springframework.stereotype.Component;
 import org.springframework.web.util.UriComponentsBuilder;

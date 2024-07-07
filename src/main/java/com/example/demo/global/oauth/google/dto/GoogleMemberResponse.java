@@ -1,4 +1,4 @@
-package com.example.demo.domain.global.oauth.google.dto;
+package com.example.demo.global.oauth.google.dto;
 
 import com.example.demo.domain.oauth.dto.OauthId;
 import com.example.demo.domain.oauth.dto.OauthMember;

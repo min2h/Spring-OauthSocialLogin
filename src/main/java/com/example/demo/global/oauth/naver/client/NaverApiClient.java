@@ -1,7 +1,7 @@
-package com.example.demo.domain.global.oauth.naver.client;
+package com.example.demo.global.oauth.naver.client;
 
-import com.example.demo.domain.global.oauth.naver.dto.NaverMemberResponse;
-import com.example.demo.domain.global.oauth.naver.dto.NaverToken;
+import com.example.demo.global.oauth.naver.dto.NaverMemberResponse;
+import com.example.demo.global.oauth.naver.dto.NaverToken;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestParam;

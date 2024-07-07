@@ -1,8 +1,8 @@
-package com.example.demo.domain.global.oauth.naver.authcode;
+package com.example.demo.global.oauth.naver.authcode;
 
 
-import com.example.demo.domain.global.oauth.naver.NaverOauthConfig;
-import com.example.demo.domain.global.oauth.oauthcode.OauthCodeRequestUrlProvider;
+import com.example.demo.global.oauth.naver.NaverOauthConfig;
+import com.example.demo.global.oauth.oauthcode.OauthCodeRequestUrlProvider;
 import com.example.demo.domain.oauth.dto.OauthServerType;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;

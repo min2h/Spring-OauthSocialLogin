@@ -1,4 +1,4 @@
-package com.example.demo.domain.global.oauth.naver;
+package com.example.demo.global.oauth.naver;
 
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;

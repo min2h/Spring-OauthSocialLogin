@@ -1,4 +1,4 @@
-package com.example.demo.domain.global.oauth.naver.dto;
+package com.example.demo.global.oauth.naver.dto;
 
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 

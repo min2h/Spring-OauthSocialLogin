@@ -1,9 +1,9 @@
-package com.example.demo.domain.global.oauth.naver;
+package com.example.demo.global.oauth.naver;
 
-import com.example.demo.domain.global.oauth.client.OauthMemberClient;
-import com.example.demo.domain.global.oauth.naver.client.NaverApiClient;
-import com.example.demo.domain.global.oauth.naver.dto.NaverMemberResponse;
-import com.example.demo.domain.global.oauth.naver.dto.NaverToken;
+import com.example.demo.global.oauth.client.OauthMemberClient;
+import com.example.demo.global.oauth.naver.client.NaverApiClient;
+import com.example.demo.global.oauth.naver.dto.NaverMemberResponse;
+import com.example.demo.global.oauth.naver.dto.NaverToken;
 import com.example.demo.domain.oauth.dto.OauthMember;
 import com.example.demo.domain.oauth.dto.OauthServerType;
 import lombok.RequiredArgsConstructor;

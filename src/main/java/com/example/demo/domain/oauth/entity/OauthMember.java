@@ -1,5 +1,5 @@
-package com.example.demo.domain.member.entity;
-import com.example.demo.domain.member.StatusEntity;
+package com.example.demo.domain.oauth.entity;
+import com.example.demo.domain.oauth.StatusEntity;
 import com.example.demo.domain.oauth.dto.OauthServerType;
 import com.example.demo.domain.oauth.dto.Role;
 import jakarta.persistence.*;
@@ -15,7 +15,7 @@ import static jakarta.persistence.EnumType.STRING;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(
-        name = "member_table",
+        name = "oauth_member_table",
         uniqueConstraints = {
                 @UniqueConstraint(
                         name = "oauth_id_unique",
@@ -26,7 +26,7 @@ import static jakarta.persistence.EnumType.STRING;
                 )
         }
 )
-public class Member extends StatusEntity {
+public class OauthMember extends StatusEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -56,8 +56,8 @@ public class Member extends StatusEntity {
     private Role role;
 
     @Builder
-    public Member(String oauthServerId, OauthServerType oauthServerType, String email,
-                  String birthday, String nickname, String profileImageUrl, Role role) {
+    public OauthMember(String oauthServerId, OauthServerType oauthServerType, String email,
+                       String birthday, String nickname, String profileImageUrl, Role role) {
         this.oauthServerId = oauthServerId;
         this.oauthServerType = oauthServerType;
         this.email = email;

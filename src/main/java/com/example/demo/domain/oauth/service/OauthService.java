@@ -1,5 +1,6 @@
 package com.example.demo.domain.oauth.service;
 
+import com.example.demo.domain.oauth.dto.OauthMember;
 import com.example.demo.domain.oauth.entity.Member;
 import com.example.demo.global.oauth.client.OauthMemberClientComposite;
 import com.example.demo.global.oauth.oauthcode.OauthCodeRequestUrlProviderComposite;
@@ -29,12 +30,12 @@ public class OauthService {
     }
 
     public Map<String, Long> login(OauthServerType oauthServerType, String authCode) {
-        com.example.demo.domain.oauth.dto.OauthMember oauthMember;
+        OauthMember oauthMember;
         try {
             oauthMember = oauthMemberClientComposite.fetch(oauthServerType, authCode);
         } catch (Exception e) {
             log.error("Failed to fetch OAuth member: {}", e.getMessage(), e);
-            throw new RuntimeException();
+            throw new RuntimeException("Failed to fetch OAuth member", e);
         }
 
         Member member = oauthMemberRepository.findByEmail(oauthMember.getEmail())
@@ -60,5 +61,6 @@ public class OauthService {
         response.put("id", member.getId());
         return response;
     }
+
 }
 

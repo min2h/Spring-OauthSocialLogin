@@ -14,7 +14,11 @@ public enum OauthServerType {
     GOOGLE,
     ;
 
-    public static OauthServerType fromName(String type) {
-        return OauthServerType.valueOf(type.toUpperCase(ENGLISH));
+    public static OauthServerType fromName(String name) {
+        try {
+            return OauthServerType.valueOf(name.toUpperCase());
+        } catch (IllegalArgumentException e) {
+            return null;
+        }
     }
 }

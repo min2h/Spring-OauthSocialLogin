@@ -36,6 +36,7 @@ public class OauthController {
             // 스페이스를 URL 인코딩하여 추가
         }
 
+
         response.sendRedirect(redirectUrl);
 
         return ResponseEntity.ok().build();

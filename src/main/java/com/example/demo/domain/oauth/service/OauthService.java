@@ -54,7 +54,7 @@ public class OauthService {
                 );
 
         if ("N".equals(member.getCheckStatus())) {
-            member.updateCheckstatus("Y");
+            member.deactivate();
         }
 
         Map<String, Long> response = new HashMap<>();

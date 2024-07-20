@@ -68,18 +68,6 @@ public class Member extends StatusEntity {
         this.checkStatus = "Y"; // 회원 가입 시 기본값 설정
     }
 
-    public void updateNickname(String nickname) {
-        this.nickname = nickname;
-    }
-
-    public void updateProfileImageUrl(String profileImageUrl) {
-        this.profileImageUrl = profileImageUrl;
-    }
-
-    public void updateBirthday(String birthday) {
-        this.birthday = birthday;
-    }
-
     public void updateCheckstatus(String checkStatus) {
         this.checkStatus = checkStatus;
     }

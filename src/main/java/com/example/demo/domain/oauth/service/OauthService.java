@@ -52,7 +52,6 @@ public class OauthService {
                                         .build()
                         )
                 );
-
         if ("N".equals(member.getCheckStatus())) {
             member.deactivate();
         }

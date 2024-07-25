@@ -37,7 +37,6 @@ public class OauthService {
             log.error("Failed to fetch OAuth member: {}", e.getMessage(), e);
             throw new RuntimeException("Failed to fetch OAuth member", e);
         }
-
         Member member = oauthMemberRepository.findByEmail(oauthMember.getEmail())
                 .orElseGet(
                         () -> oauthMemberRepository.save(

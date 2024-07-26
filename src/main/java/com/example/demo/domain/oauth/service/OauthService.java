@@ -55,6 +55,7 @@ public class OauthService {
             member.deactivate();
         }
 
+
         Map<String, Long> response = new HashMap<>();
         response.put("id", member.getId());
         return response;
